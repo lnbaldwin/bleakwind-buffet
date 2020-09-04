@@ -7,7 +7,7 @@ using BleakwindBuffet.Data.Enums;
  * Class Name: MadOtarGrits
  * Purpose: To store information about a MadOtarGrits order
  */
-namespace BleakwindBuffet.Data.Entrees
+namespace BleakwindBuffet.Data.Sides
 {
     /// <summary>
     /// Class to describe an order of a "Mad Otar Grits" aka cheesy grits

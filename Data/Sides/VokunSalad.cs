@@ -7,7 +7,7 @@ using BleakwindBuffet.Data.Enums;
  * Class Name: VokunSalad
  * Purpose: To store information about a VokunSalad order
  */
-namespace BleakwindBuffet.Data.Entrees
+namespace BleakwindBuffet.Data.Sides
 {
     /// <summary>
     /// Class to describe an order of a "Vokun Salad" aka a fruit salad

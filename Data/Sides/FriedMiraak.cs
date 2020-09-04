@@ -7,7 +7,7 @@ using BleakwindBuffet.Data.Enums;
  * Class Name: FriedMiraak
  * Purpose: To store information about a FriedMiraak order
  */
-namespace BleakwindBuffet.Data.Entrees
+namespace BleakwindBuffet.Data.Sides
 {
     /// <summary>
     /// Class to describe an order of "Fried Miraak" aka hash brown pancakes

@@ -7,7 +7,7 @@ using BleakwindBuffet.Data.Enums;
  * Class Name: DragonbornWaffleFries
  * Purpose: To store information about a DragonbornWaffleFries order
  */
-namespace BleakwindBuffet.Data.Entrees
+namespace BleakwindBuffet.Data.Sides
 {
     /// <summary>
     /// Class to describe an order of "Dragonborn Waffle Fries" aka Cajun Fries
