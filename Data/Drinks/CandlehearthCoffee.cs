@@ -13,8 +13,11 @@ namespace BleakwindBuffet.Data.Drinks
 {
     public class CandlehearthCoffee
     {
-       
+       /// <value>
+       /// Size enum to store the sze of the order
+       /// </value>
         private Size size = Size.Small;
+
         /// <summary>
         /// Getter for the size
         /// </summary>
@@ -24,7 +27,9 @@ namespace BleakwindBuffet.Data.Drinks
             set { size = value; }
         }
 
-        
+        /// <value>
+        /// bool to store if ice is requested for the order
+        /// </value>
         private bool ice = false;
         /// <summary>
         /// Getter and setter for the ice property

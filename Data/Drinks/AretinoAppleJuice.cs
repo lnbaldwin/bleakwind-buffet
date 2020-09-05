@@ -10,9 +10,14 @@ using BleakwindBuffet.Data.Enums;
  */
 namespace BleakwindBuffet.Data.Drinks
 {
+    /// <summary>
+    /// Class to represent an AretinoAppleJuce object
+    /// </summary>
     public class AretinoAppleJuice
     {
-        
+        /// <value>
+        /// Enum to store the size of the order
+        /// </value>
         private Size size = Size.Small;
         /// <summary>
         /// Getter and setter for the Size of the AretinoAppleJuice
@@ -23,7 +28,9 @@ namespace BleakwindBuffet.Data.Drinks
             set { size = value; }
         }
 
-        
+        /// <value>
+        /// bool to store if ice was requested for this order
+        /// </value>
         private bool ice = false;
         /// <summary>
         /// Getter and setter for the Ice property
@@ -39,9 +46,9 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
         /// <summary>
-        /// Getter for the Price:
-        /// If size is not small, medium, or large, will throw a NotImplementedEception
+        /// Getter for the Price whitch returns a double
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Given a size not in the Size enum</exception>
         public double Price
         {
             get
@@ -56,9 +63,9 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
         /// <summary>
-        /// Getter for the Calories:
-        /// If size is not small, medium, or large, will throw a NotImplementedEception
+        /// Getter for the Calories, which returns a unsigned int
         /// </summary>
+        /// <exception cref="System.NotImplementedException">Given a size not in the Size enum</exception>
         public uint Calories
         {
             get
@@ -73,7 +80,9 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
 
-        
+        /// <value>
+        /// A List of strings storing any special instructions to apply to the order
+        /// </value>
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of specialInstructions for the order
