@@ -11,7 +11,7 @@ using BleakwindBuffet.Data.Enums;
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    class CandlehearthCoffee
+    public class CandlehearthCoffee
     {
        
         private Size size = Size.Small;

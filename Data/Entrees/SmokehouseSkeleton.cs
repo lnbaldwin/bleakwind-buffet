@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Includes sausage links, eggs, and hash browns on the side. 
     /// Topped with the syrup of your choice."
     /// </summary>
-    class SmokehouseSkeleton
+    public class SmokehouseSkeleton
     {
         private bool sausageLink = true;
         private bool egg = true;

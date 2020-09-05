@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Briarheart Burger" aka a 1/4lb burger
     /// "Single patty burger on a brioche bun. Comes with ketchup, mustard, pickle, and cheese."
     /// </summary>
-    class BriarheartBurger
+    public class BriarheartBurger
     {
         private bool bun = true;
         private bool ketchup = true;

@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Thugs T-Bone" aka a T-Bone
     /// "Juicy T-Bone not much else to say"
     /// </summary>
-    class ThugsTBone
+    public class ThugsTBone
     {
         /// <summary>
         /// Getter for the Price

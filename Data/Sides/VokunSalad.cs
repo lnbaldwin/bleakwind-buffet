@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of a "Vokun Salad" aka a fruit salad
     /// </summary>
-    class VokunSalad
+    public class VokunSalad
     {
         private Size size = Size.Small;
         /// <summary>

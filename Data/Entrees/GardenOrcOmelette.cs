@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// "Vegetarian. Two egg omelette packed with a mix of broccoli, mushrooms, and tomatoes. 
     /// Topped with cheddar cheese."
     /// </summary>
-    class GardenOrcOmelette
+    public class GardenOrcOmelette
     {
         private bool broccoli = true;
         private bool mushrooms = true;

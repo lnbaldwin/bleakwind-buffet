@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of "Fried Miraak" aka hash brown pancakes
     /// </summary>
-    class FriedMiraak
+    public class FriedMiraak
     {
         private Size size = Size.Small;
         /// <summary>

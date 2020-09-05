@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Philly Poacher" aka a philly cheesesteak sandwich
     /// "Cheesesteak sandwich made from grilled sirloin, topped with onions on a fried roll."
     /// </summary>
-    class PhillyPoacher
+    public class PhillyPoacher
     {
         private bool sirloin = true;
         private bool onion = true;

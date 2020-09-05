@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of a "Mad Otar Grits" aka cheesy grits
     /// </summary>
-    class MadOtarGrits
+    public class MadOtarGrits
     {
         private Size size = Size.Small;
 

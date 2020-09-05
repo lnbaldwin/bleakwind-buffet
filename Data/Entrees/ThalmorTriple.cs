@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Inlcudes two 1/4lb patties with a 1/2lb patty inbetween 
     /// with ketchup, mustard, pickle, cheese, tomato, lettuce, mayo, bacon, and an egg."
     /// </summary>
-    class ThalmorTriple
+    public class ThalmorTriple
     {
         private bool bun = true;
         private bool ketchup = true;

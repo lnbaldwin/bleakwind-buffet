@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Double Draugr" aka a 1/2lb burger
     /// "Double patty burger on a brioche bun. Comes with ketchup, mustard, pickle, cheese, tomato, lettuce, and mayo."
     /// </summary>
-    class DoubleDraugr
+    public class DoubleDraugr
     {
         private bool bun = true;
         private bool ketchup = true;
