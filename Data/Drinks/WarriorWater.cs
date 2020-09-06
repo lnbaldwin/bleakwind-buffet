@@ -33,6 +33,7 @@ namespace BleakwindBuffet.Data.Drinks
             {
                 if (value) specialInstructions.Remove("Hold ice");
                 else specialInstructions.Add("Hold ice");
+                ice = value;
             }
         }
 

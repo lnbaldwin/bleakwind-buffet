@@ -45,7 +45,11 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
         
+        /// <value>
+        /// If the Coffee includes cream
+        /// </value>
         private bool roomForCream = false;
+
         /// <summary>
         /// Getter and setter for the roomForCream property
         /// </summary>
@@ -63,8 +67,11 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
 
-        
+        /// <value>
+        /// If the coffee is decaf
+        /// </value>
         private bool decaf = false;
+
         /// <summary>
         /// Getter and setter for the decaf property
         /// Don't add to specialInstructions, but used in the ToString()
@@ -80,7 +87,6 @@ namespace BleakwindBuffet.Data.Drinks
                 decaf = value;
             }
         }
-
 
         /// <summary>
         /// Getter for the Price:
@@ -112,8 +118,12 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
 
+        /// <value>
+        /// List to store the special instructions for the order
+        /// </value>
         
         private List<string> specialInstructions = new List<string>();
+
         /// <summary>
         /// Getter for the string List of SpecialInstructions
         /// </summary>
@@ -124,6 +134,7 @@ namespace BleakwindBuffet.Data.Drinks
                 return new List<string>(specialInstructions);
             }
         }
+
         /// <summary>
         /// Override of the ToString method
         /// </summary>

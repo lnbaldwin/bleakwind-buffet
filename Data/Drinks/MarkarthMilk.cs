@@ -13,7 +13,14 @@ namespace BleakwindBuffet.Data.Drinks
 {
     public class MarkarthMilk
     {
+        /// <value>
+        /// If the order needs ice or not
+        /// </value>
         private bool ice = false;
+
+        /// <value>
+        /// Size enum to store the sze of the order
+        /// </value>
         private Size size = Size.Small;
 
         /// <summary>
@@ -102,7 +109,9 @@ namespace BleakwindBuffet.Data.Drinks
             }
         }
 
-        
+        /// <summary>
+        /// List to store any Special Instructions for the order
+        /// </summary>
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the Special Instructions:

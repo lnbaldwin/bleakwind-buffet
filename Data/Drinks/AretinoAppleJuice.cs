@@ -89,7 +89,10 @@ namespace BleakwindBuffet.Data.Drinks
         /// </summary>
         public List<string> SpecialInstructions
         {
-            get { return new List<string>(specialInstructions); }
+            get 
+            {
+                return new List<string>(specialInstructions);
+            }
         }
 
         /// <summary>
