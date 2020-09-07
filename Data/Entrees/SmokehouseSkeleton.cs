@@ -29,8 +29,8 @@ namespace BleakwindBuffet.Data.Entrees
             get { return sausageLink; }
             set
             {
-                if (value) specialInstructions.Remove("Hold sausageLink");
-                else specialInstructions.Add("Hold sausageLink");
+                if (value) specialInstructions.Remove("Hold sausage");
+                else specialInstructions.Add("Hold sausage");
                 sausageLink = value;
             }
         }
@@ -43,8 +43,8 @@ namespace BleakwindBuffet.Data.Entrees
             get { return egg; }
             set
             {
-                if (value) specialInstructions.Remove("Hold egg");
-                else specialInstructions.Add("Hold egg");
+                if (value) specialInstructions.Remove("Hold eggs");
+                else specialInstructions.Add("Hold eggs");
                 egg = value;
             }
         }
@@ -57,8 +57,8 @@ namespace BleakwindBuffet.Data.Entrees
             get { return hashBrowns; }
             set
             {
-                if (value) specialInstructions.Remove("Hold hashBrowns");
-                else specialInstructions.Add("Hold hashBrowns");
+                if (value) specialInstructions.Remove("Hold hash browns");
+                else specialInstructions.Add("Hold hash browns");
                 hashBrowns = value;
             }
         }
@@ -71,8 +71,8 @@ namespace BleakwindBuffet.Data.Entrees
             get { return pancake; }
             set
             {
-                if (value) specialInstructions.Remove("Hold pancake");
-                else specialInstructions.Add("Hold pancake");
+                if (value) specialInstructions.Remove("Hold pancakes");
+                else specialInstructions.Add("Hold pancakes");
                 pancake = value;
             }
         }
