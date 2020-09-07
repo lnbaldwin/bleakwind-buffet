@@ -40,8 +40,8 @@ namespace BleakwindBuffet.Data.Entrees
             get { return onion; }
             set
             {
-                if (value) specialInstructions.Remove("Hold onion");
-                else specialInstructions.Add("Hold onion");
+                if (value) specialInstructions.Remove("Hold onions");
+                else specialInstructions.Add("Hold onions");
                 onion = value;
             }
         }
