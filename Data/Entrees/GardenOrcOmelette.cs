@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// "Vegetarian. Two egg omelette packed with a mix of broccoli, mushrooms, and tomatoes. 
     /// Topped with cheddar cheese."
     /// </summary>
-    public class GardenOrcOmelette
+    public class GardenOrcOmelette : Entree, IOrderItem
     {
         private bool broccoli = true;
         private bool mushrooms = true;
@@ -78,18 +78,18 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Getter for the Price property
         /// </summary>
-        public double Price { get => 4.57; }
+        public override double Price { get => 4.57; }
 
         /// <summary>
         /// Getter for the Calories Property
         /// </summary>
-        public uint Calories { get => 404; }
+        public override uint Calories { get => 404; }
 
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }

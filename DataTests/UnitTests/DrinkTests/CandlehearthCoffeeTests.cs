@@ -19,6 +19,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class CandlehearthCoffeeTests
     {
         /// <summary>
+        /// Fact test to check that the CandlehearthCoffee class ipliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            CandlehearthCoffee cof = new CandlehearthCoffee();
+            Assert.IsAssignableFrom<IOrderItem>(cof);
+        }
+
+        /// <summary>
+        /// Fact test to check that the CandlehearthCoffee class inherits from the Drink class
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            CandlehearthCoffee cof = new CandlehearthCoffee();
+            Assert.IsAssignableFrom<Drink>(cof);
+        }
+
+        /// <summary>
         /// Fact test to check that Ice is false initially
         /// </summary>
         [Fact]

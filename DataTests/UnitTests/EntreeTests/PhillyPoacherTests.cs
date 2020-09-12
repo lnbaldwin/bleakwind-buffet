@@ -18,13 +18,33 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class PhillyPoacherTests
     {
         /// <summary>
+        /// Fact test to check that the class PhillyPoacher impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            PhillyPoacher php= new PhillyPoacher();
+            Assert.IsAssignableFrom<IOrderItem>(php);
+        }
+
+        /// <summary>
+        /// Fact test to check that the PhillyPoacher class inherits from the Entree base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnEntree()
+        {
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.IsAssignableFrom<Entree>(php);
+        }
+
+        /// <summary>
         /// Fact test to check that the sirloin is included initially
         /// </summary>
         [Fact]
         public void ShouldInlcudeSirloinByDefault()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.True(phl.Sirloin);
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.True(php.Sirloin);
         }
 
         /// <summary>
@@ -33,8 +53,8 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldInlcudeOnionByDefault()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.True(phl.Onion);
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.True(php.Onion);
         }
 
         /// <summary>
@@ -43,8 +63,8 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldInlcudeRollByDefault()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.True(phl.Roll);
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.True(php.Roll);
         }
 
         /// <summary>
@@ -53,11 +73,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldBeAbleToSetSirloin()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            phl.Sirloin = false;
-            Assert.False(phl.Sirloin);
-            phl.Sirloin = true;
-            Assert.True(phl.Sirloin);
+            PhillyPoacher php = new PhillyPoacher();
+            php.Sirloin = false;
+            Assert.False(php.Sirloin);
+            php.Sirloin = true;
+            Assert.True(php.Sirloin);
         }
 
         /// <summary>
@@ -66,11 +86,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldBeAbleToSetOnions()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            phl.Onion = false;
-            Assert.False(phl.Onion);
-            phl.Onion = true;
-            Assert.True(phl.Onion);
+            PhillyPoacher php = new PhillyPoacher();
+            php.Onion = false;
+            Assert.False(php.Onion);
+            php.Onion = true;
+            Assert.True(php.Onion);
         }
 
         /// <summary>
@@ -79,11 +99,11 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldBeAbleToSetRoll()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            phl.Roll = false;
-            Assert.False(phl.Roll);
-            phl.Roll = true;
-            Assert.True(phl.Roll);
+            PhillyPoacher php = new PhillyPoacher();
+            php.Roll = false;
+            Assert.False(php.Roll);
+            php.Roll = true;
+            Assert.True(php.Roll);
         }
 
         /// <summary>
@@ -92,8 +112,8 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldReturnCorrectPrice()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.Equal(7.23, phl.Price);
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.Equal(7.23, php.Price);
         }
 
         /// <summary>
@@ -102,8 +122,8 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldReturnCorrectCalories()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.Equal((uint)784, phl.Calories);
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.Equal((uint)784, php.Calories);
         }
 
         /// <summary>
@@ -119,19 +139,19 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         public void ShouldReturnCorrectSpecialInstructions(bool includeSirloin, bool includeOnion,
                                                             bool includeRoll)
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            phl.Sirloin = includeSirloin;
-            phl.Onion = includeOnion;
-            phl.Roll = includeRoll;
+            PhillyPoacher php = new PhillyPoacher();
+            php.Sirloin = includeSirloin;
+            php.Onion = includeOnion;
+            php.Roll = includeRoll;
             if(includeSirloin && includeOnion && includeRoll)
             {
-                Assert.Empty(phl.SpecialInstructions);
+                Assert.Empty(php.SpecialInstructions);
             }
             if(!includeSirloin && !includeOnion && !includeRoll)
             {
-                Assert.Contains("Hold sirloin", phl.SpecialInstructions);
-                Assert.Contains("Hold onions", phl.SpecialInstructions);
-                Assert.Contains("Hold roll", phl.SpecialInstructions);
+                Assert.Contains("Hold sirloin", php.SpecialInstructions);
+                Assert.Contains("Hold onions", php.SpecialInstructions);
+                Assert.Contains("Hold roll", php.SpecialInstructions);
             }
         }
 
@@ -141,8 +161,8 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
         [Fact]
         public void ShouldReturnCorrectToString()
         {
-            PhillyPoacher phl = new PhillyPoacher();
-            Assert.Equal("Philly Poacher", phl.ToString());
+            PhillyPoacher php = new PhillyPoacher();
+            Assert.Equal("Philly Poacher", php.ToString());
         }
     }
 }

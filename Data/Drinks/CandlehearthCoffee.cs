@@ -11,22 +11,9 @@ using BleakwindBuffet.Data.Enums;
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class CandlehearthCoffee
+    public class CandlehearthCoffee : Drink, IOrderItem
     {
-       /// <value>
-       /// Size enum to store the sze of the order
-       /// </value>
-        private Size size = Size.Small;
-
-        /// <summary>
-        /// Getter for the size
-        /// </summary>
-        public Size Size
-        {
-            get { return size; }
-            set { size = value; }
-        }
-
+       
         /// <value>
         /// bool to store if ice is requested for the order
         /// </value>
@@ -34,7 +21,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Getter and setter for the ice property
         /// </summary>
-        public bool Ice 
+        public override bool Ice 
         {
             get { return ice; }
             set 
@@ -92,13 +79,13 @@ namespace BleakwindBuffet.Data.Drinks
         /// Getter for the Price:
         /// If size is not small, medium, or large, will throw a NotImplementedEception
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
-                if (size == Size.Small) return .75;
-                else if (size == Size.Medium) return 1.25;
-                else if (size == Size.Large) return 1.75;
+                if (Size == Size.Small) return .75;
+                else if (Size == Size.Medium) return 1.25;
+                else if (Size == Size.Large) return 1.75;
                 else throw new NotImplementedException();
             }
         }
@@ -107,13 +94,13 @@ namespace BleakwindBuffet.Data.Drinks
         /// Getter for the Calories:
         /// If size is not small, medium, or large, will throw a NotImplementedEception
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
-                if (size == Size.Small) return 7;
-                else if (size == Size.Medium) return 10;
-                else if (size == Size.Large) return 20;
+                if (Size == Size.Small) return 7;
+                else if (Size == Size.Medium) return 10;
+                else if (Size == Size.Large) return 20;
                 else throw new NotImplementedException();
             }
         }
@@ -127,7 +114,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Getter for the string List of SpecialInstructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get
             {
@@ -141,8 +128,8 @@ namespace BleakwindBuffet.Data.Drinks
         /// <returns>The size, if it's decaf or not, and name of the drink</returns>
         public override string ToString()
         {
-            if (decaf) return $"{size} Decaf Candlehearth Coffee";
-            else return $"{size} Candlehearth Coffee";
+            if (decaf) return $"{Size} Decaf Candlehearth Coffee";
+            else return $"{Size} Candlehearth Coffee";
         }
     }
 }

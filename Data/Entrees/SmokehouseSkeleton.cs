@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Includes sausage links, eggs, and hash browns on the side. 
     /// Topped with the syrup of your choice."
     /// </summary>
-    public class SmokehouseSkeleton
+    public class SmokehouseSkeleton : Entree, IOrderItem
     {
         private bool sausageLink = true;
         private bool egg = true;
@@ -80,18 +80,18 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Getter for the Price property
         /// </summary>
-        public double Price { get => 5.62; }
+        public override double Price { get => 5.62; }
 
         /// <summary>
         /// Getter for the Calories Property
         /// </summary>
-        public uint Calories { get => 602; }
+        public override uint Calories { get => 602; }
 
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }

@@ -13,29 +13,17 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// Class to represent an AretinoAppleJuce object
     /// </summary>
-    public class AretinoAppleJuice
-    {
-        /// <value>
-        /// Enum to store the size of the order
-        /// </value>
-        private Size size = Size.Small;
-        /// <summary>
-        /// Getter and setter for the Size of the AretinoAppleJuice
-        /// </summary>
-        public Size Size
-        {
-            get { return size; }
-            set { size = value; }
-        }
-
+    public class AretinoAppleJuice : Drink, IOrderItem
+    {        
         /// <value>
         /// bool to store if ice was requested for this order
         /// </value>
         private bool ice = false;
+
         /// <summary>
         /// Getter and setter for the Ice property
         /// </summary>
-        public bool Ice
+        public override bool Ice
         {
             get { return ice; }
             set
@@ -49,13 +37,13 @@ namespace BleakwindBuffet.Data.Drinks
         /// Getter for the Price whitch returns a double
         /// </summary>
         /// <exception cref="System.NotImplementedException">Given a size not in the Size enum</exception>
-        public double Price
+        public override double Price
         {
             get
             {
-                if (size == Size.Small) return 0.62;
-                else if (size == Size.Medium) return 0.87;
-                else if (size == Size.Large) return 1.01;
+                if (Size == Size.Small) return 0.62;
+                else if (Size == Size.Medium) return 0.87;
+                else if (Size == Size.Large) return 1.01;
                 else
                 {
                     throw new NotImplementedException();
@@ -66,13 +54,13 @@ namespace BleakwindBuffet.Data.Drinks
         /// Getter for the Calories, which returns a unsigned int
         /// </summary>
         /// <exception cref="System.NotImplementedException">Given a size not in the Size enum</exception>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
-                if (size == Size.Small) return 44;
-                else if (size == Size.Medium) return 88;
-                else if (size == Size.Large) return 132;
+                if (Size == Size.Small) return 44;
+                else if (Size == Size.Medium) return 88;
+                else if (Size == Size.Large) return 132;
                 else
                 {
                     throw new NotImplementedException();
@@ -87,7 +75,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Getter for the List of specialInstructions for the order
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get 
             {
@@ -101,7 +89,7 @@ namespace BleakwindBuffet.Data.Drinks
         /// /// <returns>The size and name of the drink</returns>
         public override string ToString()
         {
-            return $"{size} Aretino Apple Juice";
+            return $"{Size} Aretino Apple Juice";
         }
 
     }

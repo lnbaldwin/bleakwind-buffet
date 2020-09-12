@@ -19,6 +19,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class FriedMiraakTests
     {
         /// <summary>
+        /// Fact test to check that the FriedMiraak class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            FriedMiraak frm = new FriedMiraak();
+            Assert.IsAssignableFrom<IOrderItem>(frm);
+        }
+
+        /// <summary>
+        /// Fact test to check that the FriedMiraak class inherits from the Side base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeASide()
+        {
+            FriedMiraak frm = new FriedMiraak();
+            Assert.IsAssignableFrom<Side>(frm);
+        }
+
+        /// <summary>
         /// Fact test to check that the size of the order is Small initially
         /// </summary>
         [Fact]

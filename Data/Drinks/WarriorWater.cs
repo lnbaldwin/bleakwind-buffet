@@ -9,24 +9,14 @@ using BleakwindBuffet.Data.Enums;
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class WarriorWater
+    public class WarriorWater : Drink, IOrderItem
     {
-        
-        private Size size = Size.Small;
-        /// <summary>
-        /// Getter and setter for the Size of the drink
-        /// </summary>
-        public Size Size
-        {
-            get { return size; }
-            set { size = value; }
-        }
         
         private bool ice = true;
         /// <summary>
         /// Getter and setter for the Ice property
         /// </summary>
-        public bool Ice
+        public override bool Ice
         {
             get { return ice; }
             set
@@ -56,18 +46,18 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Getter for the Price property
         /// </summary>
-        public double Price { get { return 0; } }
+        public override double Price { get { return 0; } }
         /// <summary>
         /// Getter for the Calories property
         /// </summary>
-        public uint Calories { get { return 0; } }
+        public override uint Calories { get { return 0; } }
 
         
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }
@@ -75,10 +65,10 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Override of the ToString method
         /// </summary>
-        /// <returns>The size and name of the drink</returns>
+        /// <returns>The Size and name of the drink</returns>
         public override string ToString()
         {
-            return $"{size} Warrior Water";
+            return $"{Size} Warrior Water";
         }
 
 

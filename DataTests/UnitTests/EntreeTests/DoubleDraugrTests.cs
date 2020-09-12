@@ -16,7 +16,27 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     /// Class of tests to use on the DoubleDraugr class in BleakwindBuffet.Data.Entrees
     /// </summary>
     public class DoubleDraugrTests
-    {   
+    {
+        /// <summary>
+        /// Fact test to check that the class DoubleDraugr impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            DoubleDraugr ddr = new DoubleDraugr();
+            Assert.IsAssignableFrom<IOrderItem>(ddr);
+        }
+
+        /// <summary>
+        /// Fact test to check that the DoubleDraugr class inherits from the Entree base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnEntree()
+        {
+            DoubleDraugr ddr = new DoubleDraugr();
+            Assert.IsAssignableFrom<Entree>(ddr);
+        }
+
         /// <summary>
         /// fact test to check that the bun is included initially
         /// </summary>

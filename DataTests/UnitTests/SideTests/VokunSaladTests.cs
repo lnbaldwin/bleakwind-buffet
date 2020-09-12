@@ -19,6 +19,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class VokunSaladTests
     {
         /// <summary>
+        /// Fact test to check that the VokunSalad class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            VokunSalad vsd = new VokunSalad();
+            Assert.IsAssignableFrom<IOrderItem>(vsd);
+        }
+
+        /// <summary>
+        /// Fact test to check that the VokunSalad class inherits from the Side base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeASide()
+        {
+            VokunSalad vsd = new VokunSalad();
+            Assert.IsAssignableFrom<Side>(vsd);
+        }
+
+        /// <summary>
         /// Fact test to check that the size of the order is Small initially
         /// </summary>
         [Fact]

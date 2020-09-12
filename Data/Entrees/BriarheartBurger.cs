@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Briarheart Burger" aka a 1/4lb burger
     /// "Single patty burger on a brioche bun. Comes with ketchup, mustard, pickle, and cheese."
     /// </summary>
-    public class BriarheartBurger
+    public class BriarheartBurger : Entree, IOrderItem
     {
         private bool bun = true;
         private bool ketchup = true;
@@ -93,18 +93,18 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Getter for the Price property
         /// </summary>
-        public double Price { get => 6.32; }
+        public override double Price { get => 6.32; }
 
         /// <summary>
         /// Getter for the Calories property
         /// </summary>
-        public uint Calories { get => 743; }
+        public override uint Calories { get => 743; }
 
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }

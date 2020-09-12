@@ -19,6 +19,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.SideTests
     public class MadOtarGritsTests
     {
         /// <summary>
+        /// Fact test to check that the MadOtarGrits class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            MadOtarGrits mog = new MadOtarGrits();
+            Assert.IsAssignableFrom<IOrderItem>(mog);
+        }
+
+        /// <summary>
+        /// Fact test to check that the MadOtarGrits class inherits from the Side base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeASide()
+        {
+            MadOtarGrits mog = new MadOtarGrits();
+            Assert.IsAssignableFrom<Side>(mog);
+        }
+
+        /// <summary>
         /// Fact test to check that the size of the order is Small initially
         /// </summary>
         [Fact]

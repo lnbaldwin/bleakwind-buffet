@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Double Draugr" aka a 1/2lb burger
     /// "Double patty burger on a brioche bun. Comes with ketchup, mustard, pickle, cheese, tomato, lettuce, and mayo."
     /// </summary>
-    public class DoubleDraugr
+    public class DoubleDraugr : Entree, IOrderItem
     {
         private bool bun = true;
         private bool ketchup = true;
@@ -137,17 +137,17 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Getter for the Price of the burger
         /// </summary>
-        public double Price { get => 7.32; }
+        public override double Price { get => 7.32; }
         /// <summary>
         /// Getter for the Calories of the burger
         /// </summary>
-        public uint Calories { get => 843; }
+        public override uint Calories { get => 843; }
 
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }

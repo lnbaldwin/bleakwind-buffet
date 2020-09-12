@@ -21,6 +21,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class SailorSodaTests
     {
         /// <summary>
+        /// Fact test to check that the SailorSoda class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            SailorSoda soda = new SailorSoda();
+            Assert.IsAssignableFrom<IOrderItem>(soda);
+        }
+
+        /// <summary>
+        /// Fact test to check that the SailorSoda class inherits from the Drink class
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            SailorSoda soda = new SailorSoda();
+            Assert.IsAssignableFrom<Drink>(soda);
+        }
+
+        /// <summary>
         /// Fact test to check that ice is set to true initially
         /// </summary>
         [Fact]

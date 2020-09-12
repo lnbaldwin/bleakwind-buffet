@@ -18,6 +18,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class GardenOrcOmeletteTests
     {
         /// <summary>
+        /// Fact test to check that the class GardenOrcOmelette impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            GardenOrcOmelette om = new GardenOrcOmelette();
+            Assert.IsAssignableFrom<IOrderItem>(om);
+        }
+
+        /// <summary>
+        /// Fact test to check that the GardenOrcOmelette class inherits from the Entree base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnEntree()
+        {
+            GardenOrcOmelette om = new GardenOrcOmelette();
+            Assert.IsAssignableFrom<Entree>(om);
+        }
+
+        /// <summary>
         /// Fact test to check that the broccoli is included initially
         /// </summary>
         [Fact]

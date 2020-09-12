@@ -18,6 +18,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class BriarheartBurgerTests
     {
         /// <summary>
+        /// Fact test to check that the class BriarheartBurger impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            BriarheartBurger brg = new BriarheartBurger();
+            Assert.IsAssignableFrom<IOrderItem>(brg);
+        }
+
+        /// <summary>
+        /// Fact test to check that the BriarheartBurger class inherits from the Entree base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnEntree()
+        {
+            BriarheartBurger brg = new BriarheartBurger();
+            Assert.IsAssignableFrom<Entree>(brg);
+        }
+
+        /// <summary>
         /// Fact test to check that the bun is included initially
         /// </summary>
         [Fact]

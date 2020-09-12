@@ -14,16 +14,15 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// A class representing an order for "Sailor Soda" aka old-fashioned soda
     /// </summary>
-    public class SailorSoda
+    public class SailorSoda : Drink, IOrderItem
     {
         private bool ice = true;
-        private Size size = Size.Small;
         private SodaFlavor flavor = SodaFlavor.Cherry;
 
         /// <summary>
         /// Getter and Setter for the ice bool
         /// </summary>
-        public bool Ice
+        public override bool Ice
         {
             get
             {
@@ -39,15 +38,6 @@ namespace BleakwindBuffet.Data.Drinks
         }
 
         /// <summary>
-        /// Getter and Setter for the Size enum size
-        /// </summary>
-        public Size Size
-        {
-            get { return size; }
-            set { size = value; }
-        }
-
-        /// <summary>
         /// Getter and Setter for the SodaFlavor enum flavor
         /// </summary>
         public SodaFlavor Flavor
@@ -57,21 +47,21 @@ namespace BleakwindBuffet.Data.Drinks
         }
         /// <summary>
         /// Getter for the Price:
-        /// If size is not small, medium, or large, will throw a NotImplementedEception
+        /// If Size is not small, medium, or large, will throw a NotImplementedEception
         /// </summary>
-        public double Price 
+        public override double Price 
         { 
             get
             {
-                if (size == Size.Small)
+                if (Size == Size.Small)
                 {
                     return 1.42;
                 }
-                else if (size == Size.Medium)
+                else if (Size == Size.Medium)
                 {
                     return 1.74;
                 }
-                else if(size == Size.Large)
+                else if(Size == Size.Large)
                 {
                     return 2.07;
                 }
@@ -84,21 +74,21 @@ namespace BleakwindBuffet.Data.Drinks
 
         /// <summary>
         ///Getter for the Calories:
-        /// If size is not small, medium, or large, will throw a NotImplementedEception
+        /// If Size is not small, medium, or large, will throw a NotImplementedEception
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
-                if (size == Size.Small)
+                if (Size == Size.Small)
                 {
                     return 117;
                 }
-                else if (size == Size.Medium)
+                else if (Size == Size.Medium)
                 {
                     return 153;
                 }
-                else if (size == Size.Large)
+                else if (Size == Size.Large)
                 {
                     return 205;
                 }
@@ -114,16 +104,16 @@ namespace BleakwindBuffet.Data.Drinks
         /// <summary>
         /// Getter for the List of SpecialInstructions, which is initalized as a new List of strings
         /// </summary>
-        public List<string> SpecialInstructions { get { return new List<string>(specialInstructions); } }
+        public override List<string> SpecialInstructions { get { return new List<string>(specialInstructions); } }
 
 
         /// <summary>
         /// Override of the ToString() method.
         /// </summary>
-        /// <returns>The size, flavor, and name of the drink</returns>/// <returns></returns>
+        /// <returns>The Size, flavor, and name of the drink</returns>/// <returns></returns>
         public override string ToString()
         {
-            return $"{size} {flavor} Sailor Soda";
+            return $"{Size} {flavor} Sailor Soda";
         }
     }
 }

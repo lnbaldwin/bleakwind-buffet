@@ -18,6 +18,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     public class AretinoAppleJuiceTests
     {
         /// <summary>
+        /// Fact test to check that the AretinoAppleJuice class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            AretinoAppleJuice aj = new AretinoAppleJuice();
+            Assert.IsAssignableFrom<IOrderItem>(aj);
+        }
+
+        /// <summary>
+        /// Fact test to check that the AretinoAppleJuice class inherits from the Drink class
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            AretinoAppleJuice aj = new AretinoAppleJuice();
+            Assert.IsAssignableFrom<Drink>(aj);
+        }
+
+        /// <summary>
         /// Fact test to check that the initial value of Ice is false.
         /// </summary>
         [Fact]

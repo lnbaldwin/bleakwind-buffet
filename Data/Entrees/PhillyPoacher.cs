@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Philly Poacher" aka a philly cheesesteak sandwich
     /// "Cheesesteak sandwich made from grilled sirloin, topped with onions on a fried roll."
     /// </summary>
-    public class PhillyPoacher
+    public class PhillyPoacher : Entree, IOrderItem
     {
         private bool sirloin = true;
         private bool onion = true;
@@ -63,17 +63,17 @@ namespace BleakwindBuffet.Data.Entrees
         /// <summary>
         /// Getter for the Price of the sandwich
         /// </summary>
-        public double Price { get => 7.23; }
+        public override double Price { get => 7.23; }
         /// <summary>
         /// Getter for the Calories of the sandwich
         /// </summary>
-        public uint Calories { get => 784; }
+        public override uint Calories { get => 784; }
 
         private List<string> specialInstructions = new List<string>();
         /// <summary>
         /// Getter for the List of Special Instructions
         /// </summary>
-        public List<string> SpecialInstructions
+        public override List<string> SpecialInstructions
         {
             get { return new List<string>(specialInstructions); }
         }

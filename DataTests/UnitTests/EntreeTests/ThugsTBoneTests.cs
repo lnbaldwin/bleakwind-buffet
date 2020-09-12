@@ -18,6 +18,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.EntreeTests
     public class ThugsTBoneTests
     {
         /// <summary>
+        /// Fact test to check that the class ThugsTBone impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            ThugsTBone ttb = new ThugsTBone();
+            Assert.IsAssignableFrom<IOrderItem>(ttb);
+        }
+
+        /// <summary>
+        /// Fact test to check that the ThugsTBone class inherits from the Entree base class
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnEntree()
+        {
+            ThugsTBone ttb = new ThugsTBone();
+            Assert.IsAssignableFrom<Entree>(ttb);
+        }
+
+        /// <summary>
         /// Fact test to check that the Price property returns what we expect
         /// </summary>
         [Fact]

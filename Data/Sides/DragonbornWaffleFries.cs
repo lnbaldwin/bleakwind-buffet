@@ -12,58 +12,45 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of "Dragonborn Waffle Fries" aka Cajun Fries
     /// </summary>
-    public class DragonbornWaffleFries
+    public class DragonbornWaffleFries : Side, IOrderItem
     {
-        private Size size = Size.Small;
-
-        /// <summary>
-        /// Getter and setter for the size of the order
-        /// </summary>
-        public Size Size { get => size; set => size = value; }
-
         /// <summary>
         /// Getter for the Price of the fries
-        /// Will throw NotImplementedException if size is not small, medium, or large
+        /// Will throw NotImplementedException if Size is not small, medium, or large
         /// </summary>
-        public double Price
+        public override double Price
         {
             get
             {
-                if (size == Size.Small) return 0.42;
-                else if (size == Size.Medium) return 0.76;
-                else if (size == Size.Large) return 0.96;
+                if (Size == Size.Small) return 0.42;
+                else if (Size == Size.Medium) return 0.76;
+                else if (Size == Size.Large) return 0.96;
                 else throw new NotImplementedException();
             }
         }
 
         /// <summary>
         /// Getter for the Calories of the fries
-        /// Will throw NotImplementedException if size is not small, medium, or large
+        /// Will throw NotImplementedException if Size is not small, medium, or large
         /// </summary>
-        public uint Calories
+        public override uint Calories
         {
             get
             {
-                if (size == Size.Small) return 77;
-                else if (size == Size.Medium) return 89;
-                else if (size == Size.Large) return 100;
+                if (Size == Size.Small) return 77;
+                else if (Size == Size.Medium) return 89;
+                else if (Size == Size.Large) return 100;
                 else throw new NotImplementedException();
             }
         }
 
         /// <summary>
-        /// Getter for the SpecialInstructions List,
-        /// will always return an empty List
-        /// </summary>
-        public List<string> SpecialInstructions { get => new List<string>(); }
-
-        /// <summary>
         /// Override of the ToString() method
         /// </summary>
-        /// <returns>The size and the name of the side</returns>
+        /// <returns>The Size and the name of the side</returns>
         public override string ToString()
         {
-            return $"{size} Dragonborn Waffle Fries";
+            return $"{Size} Dragonborn Waffle Fries";
         }
     }
 }

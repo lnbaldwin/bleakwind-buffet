@@ -13,11 +13,32 @@ using BleakwindBuffet.Data.Drinks;
 
 namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
 {
+    
     /// <summary>
     /// Class of tests to use on the MarkarthMilk class in BleakwindBuffet.Data.Drinks
     /// </summary>
     public class MarkarthMilkTests
     {
+        /// <summary>
+        /// Fact test to check that the MarkarthMilk class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            MarkarthMilk milk = new MarkarthMilk();
+            Assert.IsAssignableFrom<IOrderItem>(milk);
+        }
+
+        /// <summary>
+        /// Fact test to check that the MarkarthMilk class inherits from the Drink class
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            MarkarthMilk milk = new MarkarthMilk();
+            Assert.IsAssignableFrom<Drink>(milk);
+        }
+
         /// <summary>
         /// Fact test to check that ice is false initially
         /// </summary>

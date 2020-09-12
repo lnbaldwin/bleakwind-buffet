@@ -6,6 +6,7 @@
  */
 using Xunit;
 using System;
+using BleakwindBuffet.Data;
 using BleakwindBuffet.Data.Drinks;
 using BleakwindBuffet.Data.Enums;
 
@@ -16,6 +17,26 @@ namespace BleakwindBuffet.DataTests.UnitTests.DrinkTests
     /// </summary>
     public class WarriorWaterTests
     {
+        /// <summary>
+        /// Fact test to check that the WarriorWater class impliments the IOrderItem interface
+        /// </summary>
+        [Fact]
+        public void ShouldBeAnIOrderItem()
+        {
+            WarriorWater wat = new WarriorWater();
+            Assert.IsAssignableFrom<IOrderItem>(wat);
+        }
+
+        /// <summary>
+        /// Fact test to check that the WarriorWater class inherits from the Drink class
+        /// </summary>
+        [Fact]
+        public void ShouldBeADrink()
+        {
+            WarriorWater wat = new WarriorWater();
+            Assert.IsAssignableFrom<Drink>(wat);
+        }
+
         /// <summary>
         /// Fact test to check that Ice is true initially
         /// </summary>
