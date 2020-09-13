@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: SmokehouseSkeleton
  * Purpose: To store information about a SmokehouseSkeleton order
  */
@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Includes sausage links, eggs, and hash browns on the side. 
     /// Topped with the syrup of your choice."
     /// </summary>
-    public class SmokehouseSkeleton : Entree, IOrderItem
+    public class SmokehouseSkeleton : Entree
     {
         private bool sausageLink = true;
         private bool egg = true;

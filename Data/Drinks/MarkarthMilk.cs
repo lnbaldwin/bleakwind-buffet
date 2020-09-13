@@ -5,13 +5,13 @@ using BleakwindBuffet.Data.Enums;
 
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 28th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: MarkarthMilk
  * Purpose: To store information about a MarkarthMilk order
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class MarkarthMilk : Drink, IOrderItem
+    public class MarkarthMilk : Drink
     {
         /// <value>
         /// If the order needs ice or not

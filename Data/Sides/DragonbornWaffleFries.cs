@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using BleakwindBuffet.Data.Enums;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: DragonbornWaffleFries
  * Purpose: To store information about a DragonbornWaffleFries order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of "Dragonborn Waffle Fries" aka Cajun Fries
     /// </summary>
-    public class DragonbornWaffleFries : Side, IOrderItem
+    public class DragonbornWaffleFries : Side
     {
         /// <summary>
         /// Getter for the Price of the fries

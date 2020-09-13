@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using BleakwindBuffet.Data.Enums;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: MadOtarGrits
  * Purpose: To store information about a MadOtarGrits order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of a "Mad Otar Grits" aka cheesy grits
     /// </summary>
-    public class MadOtarGrits : Side, IOrderItem
+    public class MadOtarGrits : Side
     {
         /// <summary>
         /// Getter for the Price of the grits

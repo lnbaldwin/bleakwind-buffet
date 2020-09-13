@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: GardenOrcOmelette
  * Purpose: To store information about a GardenOrcOmelette order
  */
@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// "Vegetarian. Two egg omelette packed with a mix of broccoli, mushrooms, and tomatoes. 
     /// Topped with cheddar cheese."
     /// </summary>
-    public class GardenOrcOmelette : Entree, IOrderItem
+    public class GardenOrcOmelette : Entree
     {
         private bool broccoli = true;
         private bool mushrooms = true;

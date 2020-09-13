@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: ThalmorTriple
  * Purpose: To store information about a ThalmorTriple order
  */
@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Inlcudes two 1/4lb patties with a 1/2lb patty inbetween 
     /// with ketchup, mustard, pickle, cheese, tomato, lettuce, mayo, bacon, and an egg."
     /// </summary>
-    public class ThalmorTriple : Entree, IOrderItem
+    public class ThalmorTriple : Entree
     {
         private bool bun = true;
         private bool ketchup = true;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: PhillyPoacher
  * Purpose: To store information about a PhillyPoacher order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Philly Poacher" aka a philly cheesesteak sandwich
     /// "Cheesesteak sandwich made from grilled sirloin, topped with onions on a fried roll."
     /// </summary>
-    public class PhillyPoacher : Entree, IOrderItem
+    public class PhillyPoacher : Entree
     {
         private bool sirloin = true;
         private bool onion = true;

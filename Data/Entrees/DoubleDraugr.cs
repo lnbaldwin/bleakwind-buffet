@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: DoubleDraugr
  * Purpose: To store information about a DoubleDraugr order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Double Draugr" aka a 1/2lb burger
     /// "Double patty burger on a brioche bun. Comes with ketchup, mustard, pickle, cheese, tomato, lettuce, and mayo."
     /// </summary>
-    public class DoubleDraugr : Entree, IOrderItem
+    public class DoubleDraugr : Entree
     {
         private bool bun = true;
         private bool ketchup = true;

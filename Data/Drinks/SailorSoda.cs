@@ -4,7 +4,7 @@ using BleakwindBuffet.Data.Enums;
 
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 28th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: SailorSoda
  * Purpose: To store information about a SailorSoda order
  */
@@ -14,7 +14,7 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// A class representing an order for "Sailor Soda" aka old-fashioned soda
     /// </summary>
-    public class SailorSoda : Drink, IOrderItem
+    public class SailorSoda : Drink
     {
         private bool ice = true;
         private SodaFlavor flavor = SodaFlavor.Cherry;

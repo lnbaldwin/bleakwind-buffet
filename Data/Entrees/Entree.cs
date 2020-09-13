@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+/*
+ * Author: Laura Baldwin
+ * Last Edited: Sept. 12th 2020
+ * Class Name: Entree.cs
+ * Purpose: A base class with common properties shared between all Entrees
+*/
+
 namespace BleakwindBuffet.Data.Entrees
 {
     /// <summary>
     /// Base class for all Entree objects
     /// </summary>
-    public abstract class Entree
+    public abstract class Entree : IOrderItem
     {
         /// <summary>
         /// Price of the Entree

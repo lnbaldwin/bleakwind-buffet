@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: ThugsTBone
  * Purpose: To store information about a ThugsTBone order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Entrees
     /// Class to describe an order of a "Thugs T-Bone" aka a T-Bone
     /// "Juicy T-Bone not much else to say"
     /// </summary>
-    public class ThugsTBone : Entree, IOrderItem
+    public class ThugsTBone : Entree
     {
         /// <summary>
         /// Getter for the Price

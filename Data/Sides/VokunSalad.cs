@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using BleakwindBuffet.Data.Enums;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: VokunSalad
  * Purpose: To store information about a VokunSalad order
  */
@@ -12,7 +12,7 @@ namespace BleakwindBuffet.Data.Sides
     /// <summary>
     /// Class to describe an order of a "Vokun Salad" aka a fruit salad
     /// </summary>
-    public class VokunSalad : Side, IOrderItem
+    public class VokunSalad : Side
     {
         /// <summary>
         /// Getter for the Price of the Salad

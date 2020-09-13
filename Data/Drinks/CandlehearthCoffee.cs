@@ -5,13 +5,13 @@ using BleakwindBuffet.Data.Enums;
 
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: CandlehearthCoffee
  * Purpose: To store information about a CandlehearthCoffee order
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class CandlehearthCoffee : Drink, IOrderItem
+    public class CandlehearthCoffee : Drink
     {
        
         /// <value>

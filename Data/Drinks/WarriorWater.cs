@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using BleakwindBuffet.Data.Enums;
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: WarriorWater
  * Purpose: To store information about a WarriorWater order
  */
 namespace BleakwindBuffet.Data.Drinks
 {
-    public class WarriorWater : Drink, IOrderItem
+    public class WarriorWater : Drink
     {
         
         private bool ice = true;

@@ -4,9 +4,16 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
+/*
+ * Author: Laura Baldwin
+ * Last Edited: Sept. 12th 2020
+ * Class Name: Side.cs
+ * Purpose: A base class with common properties shared between all Sides
+*/
+
 namespace BleakwindBuffet.Data.Sides
 {
-    public abstract class Side
+    public abstract class Side : IOrderItem
     {
         /// <summary>
         /// The Size of the Side order

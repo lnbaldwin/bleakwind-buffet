@@ -3,12 +3,19 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
+/*
+ * Author: Laura Baldwin
+ * Last Edited: Sept. 12th 2020
+ * Class Name: Drink.cs
+ * Purpose: A base class with common properties shared between all Drinks
+*/
+
 namespace BleakwindBuffet.Data.Drinks
 {
     /// <summary>
     /// A base class representing the common properties of a Drink
     /// </summary>
-    public abstract class Drink
+    public abstract class Drink : IOrderItem
     {
         /// <summary>
         /// The Size of the Drink

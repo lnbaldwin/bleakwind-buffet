@@ -4,7 +4,7 @@ using BleakwindBuffet.Data.Enums;
 
 /*
  * Author: Laura Baldwin
- * Date Written: Aug 30th 2020
+ * Last Edited: Sept. 12th 2020
  * Class Name: AretinoAppleJuice
  * Purpose: To store information about an AretinoAppleJuice order
  */
@@ -13,7 +13,7 @@ namespace BleakwindBuffet.Data.Drinks
     /// <summary>
     /// Class to represent an AretinoAppleJuce object
     /// </summary>
-    public class AretinoAppleJuice : Drink, IOrderItem
+    public class AretinoAppleJuice : Drink
     {        
         /// <value>
         /// bool to store if ice was requested for this order
