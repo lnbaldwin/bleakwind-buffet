@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.DrinkWindows
 {
     /// <summary>
     /// Interaction logic for CustomizeWarriorWater.xaml
     /// </summary>
-    public partial class CustomizeWarriorWater : UserControl
+    public partial class CustomizeWW : UserControl
     {
-        public CustomizeWarriorWater()
+        public CustomizeWW()
         {
             InitializeComponent();
         }

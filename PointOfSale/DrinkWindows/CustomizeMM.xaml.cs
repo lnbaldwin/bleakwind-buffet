@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.DrinkWindows
 {
     /// <summary>
     /// Interaction logic for CustomizeMarkarthMilk.xaml
     /// </summary>
-    public partial class CustomizeMarkarthMilk : UserControl
+    public partial class CustomizeMM : UserControl
     {
-        public CustomizeMarkarthMilk()
+        public CustomizeMM()
         {
             InitializeComponent();
         }

@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.DrinkWindows
 {
     /// <summary>
-    /// Interaction logic for CustomizeAretinoAppleJuice.xaml
+    /// Interaction logic for CustomizeAAJ.xaml
     /// </summary>
-    public partial class CustomizeAretinoAppleJuice : UserControl
+    public partial class CustomizeAAJ : UserControl
     {
-        public CustomizeAretinoAppleJuice()
+        public CustomizeAAJ()
         {
             InitializeComponent();
         }

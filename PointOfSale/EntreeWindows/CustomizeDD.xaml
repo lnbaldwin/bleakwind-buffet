@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="BleakwindBuffet.PointOfSale.EntreeWindows.CustomizeBB"
+﻿<UserControl x:Class="BleakwindBuffet.PointOfSale.EntreeWindows.CustomizeDD"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,35 +6,30 @@
              xmlns:local="clr-namespace:PointOfSale.EntreeWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <!--
-    <StackPanel>
-        <ToggleButton IsChecked="{Binding Path = Ketchup}" Content="Ketchup"/>
-        
-    </StackPanel>
-    -->
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Toppings:</Label>
-        <Button Name="cancelBBurgerButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Briarheart Burger Order</Button>
-        <Button Name="confirmBBurgerButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Briarheart Burger Order</Button>
-        
-        <!--RadioButtons to select which toppings are included-->
+        <Button Name="cancelDDraugrButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Double Draugr Order</Button>
+        <Button Name="confirmDDraugrButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Double Draugr Order</Button>
+
         <StackPanel Grid.Row="1">
             <CheckBox Checked="True" Margin="10, 10, 10, 5" Content="Bun"/>
             <CheckBox Checked="True" Margin="10, 5" Content="Ketchup"/>
             <CheckBox Checked="True" Margin="10, 5" Content="Mustard"/>
+            <CheckBox Checked="True" Margin="10, 5" Content="Mayo"/>
             <CheckBox Checked="True" Margin="10, 5" Content="Pickle"/>
+            <CheckBox Checked="True" Margin="10, 5" Content="Tomato"/>
+            <CheckBox Checked="True" Margin="10, 5" Content="Lettuce"/>
             <CheckBox Checked="True" Margin="10, 5, 10, 10" Content="Cheese"/>
         </StackPanel>
     </Grid>

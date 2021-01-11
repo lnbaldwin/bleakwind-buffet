@@ -11,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale.EntreeWindows
+namespace BleakwindBuffet.PointOfSale.EntreeWindows
 {
     /// <summary>
     /// Interaction logic for CustomizeBB.xaml

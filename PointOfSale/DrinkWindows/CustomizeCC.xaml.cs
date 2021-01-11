@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.DrinkWindows
 {
     /// <summary>
     /// Interaction logic for CustomizeCandlehearthCoffee.xaml
     /// </summary>
-    public partial class CustomizeCandlehearthCoffee : UserControl
+    public partial class CustomizeCC : UserControl
     {
-        public CustomizeCandlehearthCoffee()
+        public CustomizeCC()
         {
             InitializeComponent();
         }

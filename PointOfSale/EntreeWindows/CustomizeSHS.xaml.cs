@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BleakwindBuffet.PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.EntreeWindows
 {
     /// <summary>
-    /// Interaction logic for CustomizeSS.xaml
+    /// Interaction logic for CostomizeSHS.xaml
     /// </summary>
-    public partial class CustomizeSS : UserControl
+    public partial class CustomizeSHS : UserControl
     {
-        public CustomizeSS()
+        public CustomizeSHS()
         {
             InitializeComponent();
         }

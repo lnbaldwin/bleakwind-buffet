@@ -1,22 +1,18 @@
-﻿<UserControl x:Class="BleakwindBuffet.PointOfSale.DrinkWindows.CustomizeCC"
+﻿<UserControl x:Class="BleakwindBuffet.PointOfSale.SideWindows.CustomizeDW"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.DrinkWindows"
+             xmlns:local="clr-namespace:PointOfSale.SideWindows"
              xmlns:system ="clr-namespace:System;assembly=mscorlib"
              xmlns:enums ="clr-namespace:BleakwindBuffet.Data.Enums;assembly=Data"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
+
         <ObjectDataProvider x:Key="Sizes" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
             <ObjectDataProvider.MethodParameters>
                 <x:Type Type="enums:Size"/>
-            </ObjectDataProvider.MethodParameters>
-        </ObjectDataProvider>
-        <ObjectDataProvider x:Key="Flavors" ObjectType="{x:Type system:Enum}" MethodName="GetValues">
-            <ObjectDataProvider.MethodParameters>
-                <x:Type Type="enums:SodaFlavor"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
 
@@ -27,7 +23,7 @@
                         <RadioButton Content="{TemplateBinding ContentPresenter.Content}" IsChecked="{Binding Path=IsSelected, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"/>
                     </ControlTemplate>
                 </Setter.Value>
-                
+
             </Setter>
         </Style>
 
@@ -35,52 +31,25 @@
             <Setter Property="Background"  Value="Transparent"/>
             <Setter Property="BorderBrush" Value="Transparent"/>
         </Style>
-        
     </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="1*"/>
-            
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="1*"/>
-            
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="1*"/>
-
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="1*"/>
-
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
-        <Label Grid.Row="2" FontSize="16" FontFamily="Ariel, Calibri">Ice:</Label>
-        <Label Grid.Row="4" FontSize="16" FontFamily="Ariel, Calibri">Cream:</Label>
-        <Label Grid.Row="6" FontSize="16" FontFamily="Ariel, Calibri">Decaf:</Label>
-        
-        
-        <Button Name="cancelCoffeeButton" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Candlehearth Coffee Order</Button>
-        <Button Name="confirmCoffeeButton" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Candlehearth Coffee Order</Button>
 
+        <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
+        <Button Name="cancelDWaffleButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Dragonborn Waffle Fries Order</Button>
+        <Button Name="confirmDWaffleButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Dragonborn Waffle Fries Order</Button>
 
         <StackPanel Grid.Row="1" Margin="8">
             <ListBox ItemsSource="{Binding Source={StaticResource Sizes}}" SelectedItem="{Binding Path=Size}" SelectionMode="Single"/>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Margin="8">
-            <RadioButton GroupName="iceSelect">Yes</RadioButton>
-            <RadioButton GroupName="iceSelect">No</RadioButton>
-        </StackPanel>
-        <StackPanel Grid.Row="5" Margin="8">
-            <RadioButton GroupName="creamSelect">Yes</RadioButton>
-            <RadioButton GroupName="creamSelect">No</RadioButton>
-        </StackPanel>
-        <StackPanel Grid.Row="7" Margin="8">
-            <RadioButton GroupName="decafSelect">Yes</RadioButton>
-            <RadioButton GroupName="decafSelect">No</RadioButton>
         </StackPanel>
     </Grid>
 </UserControl>

@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BleakwindBuffet.PointOfSale.DrinkWindows
+namespace BleakwindBuffet.PointOfSale.SideWindows
 {
     /// <summary>
-    /// Interaction logic for CustomizeSS.xaml
+    /// Interaction logic for CustomizeVS.xaml
     /// </summary>
-    public partial class CustomizeSS : UserControl
+    public partial class CustomizeVS : UserControl
     {
-        public CustomizeSS()
+        public CustomizeVS()
         {
             InitializeComponent();
         }
