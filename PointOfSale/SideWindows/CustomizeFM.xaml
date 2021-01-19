@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale.SideWindows"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.SideWindows"
              xmlns:system ="clr-namespace:System;assembly=mscorlib"
              xmlns:enums ="clr-namespace:BleakwindBuffet.Data.Enums;assembly=Data"
              mc:Ignorable="d" 
@@ -43,8 +43,9 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
-        <Button Name="cancelDWaffleButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Fried Miraak Order</Button>
-        <Button Name="confirmDWaffleButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Fried Miraak Order</Button>
+        
+        <Button Name="cancelDWaffleButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Fried Miraak Order</Button>
+        <Button Name="confirmDWaffleButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Fried Miraak Order</Button>
 
         <StackPanel Grid.Row="1" Margin="8">
             <ListBox ItemsSource="{Binding Source={StaticResource Sizes}}" SelectedItem="{Binding Path=Size}" SelectionMode="Single"/>

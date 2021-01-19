@@ -61,10 +61,10 @@
         <Label Grid.Row="2" FontSize="16" FontFamily="Ariel, Calibri">Ice:</Label>
         <Label Grid.Row="4" FontSize="16" FontFamily="Ariel, Calibri">Cream:</Label>
         <Label Grid.Row="6" FontSize="16" FontFamily="Ariel, Calibri">Decaf:</Label>
-        
-        
-        <Button Name="cancelCoffeeButton" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Candlehearth Coffee Order</Button>
-        <Button Name="confirmCoffeeButton" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Candlehearth Coffee Order</Button>
+
+
+        <Button Name="cancelCoffeeButton" Click="CancelOrder" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Candlehearth Coffee Order</Button>
+        <Button Name="confirmCoffeeButton" Click="FinishOrder" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Candlehearth Coffee Order</Button>
 
 
         <StackPanel Grid.Row="1" Margin="8">

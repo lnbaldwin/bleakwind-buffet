@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="PointOfSale.MenuButtons"
+﻿<UserControl x:Class="BleakwindBuffet.PointOfSale.MenuButtons"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -23,25 +23,28 @@
 
         <!--Buttons in WrapPanel for the Drinks-->
         <WrapPanel Name="Drinks" Grid.Row="1">
-            <Button Name="appleJuiceButton" Margin="8, 8, 4 ,8">Aretino Apple Juice</Button>
-            <Button Name="coffeeButton" Margin="4, 8">Candlehearth Coffee</Button>
-            <Button Name="milkButton" Margin="4, 8">Markarth Milk</Button>
-            <Button Name="sodaButton" Margin="4, 8">Sailor Soda</Button>
-            <Button Name="waterButton" Margin="4, 8">Warrior Water</Button>
+            <Button Name="appleJuiceButton" Click="CustomizeAAJHandler" Margin="8, 8, 4 ,8">Aretino Apple Juice</Button>
+            <Button Name="coffeeButton" Click="CustomizeCCHandler" Margin="4, 8">Candlehearth Coffee</Button>
+            <Button Name="milkButton" Click="CustomizeMMHandler" Margin="4, 8">Markarth Milk</Button>
+            <Button Name="sodaButton" Click="CustomizeSSHandler" Margin="4, 8">Sailor Soda</Button>
+            <Button Name="waterButton" Click="CustomizeWWHandler" Margin="4, 8">Warrior Water</Button>
         </WrapPanel>
 
         <WrapPanel Name="Entrees" Grid.Row="3">
-            <Button Name="briarheartButton" Margin="8, 8, 4, 8">Briarheart Burger</Button>
-            <Button Name="doubleBurgerButton" Margin="4, 8">Double Draugr</Button>
-            <Button Name="omeletteButton" Margin="4, 8">Garden Orc Omelette</Button>
-            <Button Name="phillyButton" Margin="4, 8">Philly Poacher</Button>
+            <Button Name="briarheartButton" Click="CustomizeBBHandler" Margin="8, 8, 4, 8">Briarheart Burger</Button>
+            <Button Name="doubleBurgerButton" Click="CustomizeDDHandler" Margin="4, 8">Double Draugr</Button>
+            <Button Name="omeletteButton" Click="CustomizeOOHandler" Margin="4, 8">Garden Orc Omelette</Button>
+            <Button Name="phillyButton" Click="CustomizePPHandler" Margin="4, 8">Philly Poacher</Button>
+            <Button Name="smokehouseSkeletonButton" Click="CustomizeSHSHandler" Margin="4,8">Smokehouse Skeleton</Button>
+            <Button Name="tripleBurgerButton" Click="CustomizeTTHandler" Margin="4,8">Thalmor Triple</Button>
+            <Button Name="tboneButton" Click="CustomizeTBHandler" Margin="4,8">Thug's TBone</Button>
         </WrapPanel>
 
         <WrapPanel Name="Sides" Grid.Row="5">
-            <Button Name="friesButton" Margin="8, 8, 4, 8">Dragonborn Waffle Fries</Button>
-            <Button Name="miraakButton" Margin="4, 8">Fried Miraak</Button>
-            <Button Name="gritsButton" Margin="4, 8">Mad Otar Grits</Button>
-            <Button Name="saladButton" Margin="4, 8">Vokun Salad</Button>
+            <Button Name="friesButton" Click="CustomizeDWHandler" Margin="8, 8, 4, 8">Dragonborn Waffle Fries</Button>
+            <Button Name="miraakButton" Click="CustomizeFMHandler" Margin="4, 8">Fried Miraak</Button>
+            <Button Name="gritsButton" Click="CustomizeMGHandler" Margin="4, 8">Mad Otar Grits</Button>
+            <Button Name="saladButton" Click="CustomizeVSHandler" Margin="4, 8">Vokun Salad</Button>
         </WrapPanel>
     </Grid>
 </UserControl>

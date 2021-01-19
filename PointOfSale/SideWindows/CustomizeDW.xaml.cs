@@ -18,9 +18,28 @@ namespace BleakwindBuffet.PointOfSale.SideWindows
     /// </summary>
     public partial class CustomizeDW : UserControl
     {
+        public MainWindow MainWindow { get; set; }
         public CustomizeDW()
         {
             InitializeComponent();
+        }
+
+        //navigation Event Handlers:
+        //rn, both events will change the child of buttonDisplay to a new MenuButtons obj
+        //later, the functionality will be added to the finish button
+
+        void CancelOrder(Object sender, RoutedEventArgs e)
+        {
+            var buttonDisplay = new MenuButtons();
+            buttonDisplay.MainWindow = MainWindow;
+            MainWindow.displayBorder.Child = buttonDisplay;
+        }
+
+        void FinishOrder(Object sender, RoutedEventArgs e)
+        {
+            var buttonDisplay = new MenuButtons();
+            buttonDisplay.MainWindow = MainWindow;
+            MainWindow.displayBorder.Child = buttonDisplay;
         }
     }
 }

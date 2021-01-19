@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale.EntreeWindows"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.EntreeWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <!--
@@ -26,16 +26,17 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Toppings:</Label>
-        <Button Name="cancelBBurgerButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Briarheart Burger Order</Button>
-        <Button Name="confirmBBurgerButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Briarheart Burger Order</Button>
+        
+        <Button Name="cancelBBurgerButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Briarheart Burger Order</Button>
+        <Button Name="confirmBBurgerButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Briarheart Burger Order</Button>
         
         <!--RadioButtons to select which toppings are included-->
         <StackPanel Grid.Row="1">
-            <CheckBox Checked="True" Margin="10, 10, 10, 5" Content="Bun"/>
-            <CheckBox Checked="True" Margin="10, 5" Content="Ketchup"/>
-            <CheckBox Checked="True" Margin="10, 5" Content="Mustard"/>
-            <CheckBox Checked="True" Margin="10, 5" Content="Pickle"/>
-            <CheckBox Checked="True" Margin="10, 5, 10, 10" Content="Cheese"/>
+            <CheckBox IsChecked="True" Margin="10, 10, 10, 5" Content="Bun"/>
+            <CheckBox IsChecked="True" Margin="10, 5" Content="Ketchup"/>
+            <CheckBox IsChecked="True" Margin="10, 5" Content="Mustard"/>
+            <CheckBox IsChecked="True" Margin="10, 5" Content="Pickle"/>
+            <CheckBox IsChecked="True" Margin="10, 5, 10, 10" Content="Cheese"/>
         </StackPanel>
     </Grid>
 </UserControl>

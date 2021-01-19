@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale.DrinkWindows"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.DrinkWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -23,8 +23,9 @@
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
         <Label Grid.Row="2" FontSize="16" FontFamily="Ariel, Calibri">Ice:</Label>
         <Label Grid.Row="4" FontSize="16" FontFamily="Ariel, Calibri">Lemon:</Label>
-        <Button Name="cancelWaterButton" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Warrior Water Order</Button>
-        <Button Name="confirmWaterButton" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Warrior Water Order</Button>
+        
+        <Button Name="cancelWaterButton" Click="CancelOrder" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Warrior Water Order</Button>
+        <Button Name="confirmWaterButton" Click="FinishOrder" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Warrior Water Order</Button>
         
         
         <StackPanel Grid.Row="1" Margin="8">

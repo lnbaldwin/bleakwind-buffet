@@ -20,8 +20,8 @@
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
         <Label Grid.Row="2" FontSize="16" FontFamily="Ariel, Calibri">Ice:</Label>
-        <Button Name="cancelWaterButton" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Aretino Apple Juice Order</Button>
-        <Button Name="confirmAJButton" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Aretino Apple Juice Order</Button>
+        <Button Name="cancelAJButton" Click="CancelOrder" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Aretino Apple Juice Order</Button>
+        <Button Name="confirmAJButton" Click="FinishOrder" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Aretino Apple Juice Order</Button>
 
 
         <StackPanel Grid.Row="1" Margin="8">

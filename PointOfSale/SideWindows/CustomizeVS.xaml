@@ -19,8 +19,9 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">No customization settings</Label>
-        <Button Name="cancelTTboneButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Vokun Salad Order</Button>
-        <Button Name="confirmTTboneButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Vokun Salad Order</Button>
+        
+        <Button Name="cancelTTboneButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Vokun Salad Order</Button>
+        <Button Name="confirmTTboneButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Vokun Salad Order</Button>
 
     </Grid>
 </UserControl>

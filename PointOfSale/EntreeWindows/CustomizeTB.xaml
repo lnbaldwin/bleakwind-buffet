@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale.EntreeWindows"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.EntreeWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -19,8 +19,9 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">No customization settings</Label>
-        <Button Name="cancelTTboneButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Thugs T-Bone Order</Button>
-        <Button Name="confirmTTboneButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Thugs T-Bone Order</Button>
+        
+        <Button Name="cancelTTboneButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Thugs T-Bone Order</Button>
+        <Button Name="confirmTTboneButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Thugs T-Bone Order</Button>
 
     </Grid>
 </UserControl>

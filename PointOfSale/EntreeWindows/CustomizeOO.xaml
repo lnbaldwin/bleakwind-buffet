@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale.EntreeWindows"
+             xmlns:local="clr-namespace:BleakwindBuffet.PointOfSale.EntreeWindows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -19,15 +19,16 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Toppings:</Label>
-        <Button Name="cancelOOmeletteButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Garden Orc Omelette Order</Button>
-        <Button Name="confirmOOmeletteButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Garden Orc Omelette Order</Button>
+        
+        <Button Name="cancelOOmeletteButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Garden Orc Omelette Order</Button>
+        <Button Name="confirmOOmeletteButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Garden Orc Omelette Order</Button>
 
 
         <StackPanel Grid.Row="1">
-            <CheckBox Checked="true" Margin="10, 10, 10, 5" Content="Broccoli"/>
-            <CheckBox Checked="true" Margin="10, 5" Content="Mushrooms"/>
-            <CheckBox Checked="true" Margin="10, 5" Content="Tomatos"/>
-            <CheckBox Checked="true" Margin="10, 5, 10, 10" Content="Cheddar"/>
+            <CheckBox IsChecked="true" Margin="10, 10, 10, 5" Content="Broccoli"/>
+            <CheckBox IsChecked="true" Margin="10, 5" Content="Mushrooms"/>
+            <CheckBox IsChecked="true" Margin="10, 5" Content="Tomatos"/>
+            <CheckBox IsChecked="true" Margin="10, 5, 10, 10" Content="Cheddar"/>
         </StackPanel>
     </Grid>
 </UserControl>

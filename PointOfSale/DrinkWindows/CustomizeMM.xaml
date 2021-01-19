@@ -26,8 +26,9 @@
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Size:</Label>
         <Label Grid.Row="2" FontSize="16" FontFamily="Ariel, Calibri">Ice:</Label>
         <Label Grid.Row="4" FontSize="16" FontFamily="Ariel, Calibri">Lemon:</Label>
-        <Button Name="cancelWaterButton" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Warrior Water Order</Button>
-        <Button Name="confirmWaterButton" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Warrior Water Order</Button>
+        
+        <Button Name="cancelMilkButton" Click="CancelOrder" Grid.Row="8" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Warrior Water Order</Button>
+        <Button Name="confirmMilkButton" Click="FinishOrder" Grid.Row="8" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Warrior Water Order</Button>
 
 
         <StackPanel Grid.Row="1" Margin="8">

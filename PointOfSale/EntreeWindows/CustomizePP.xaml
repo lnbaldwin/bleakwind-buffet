@@ -19,14 +19,15 @@
         </Grid.ColumnDefinitions>
 
         <Label Grid.Row="0" FontSize="16" FontFamily="Ariel, Calibri">Toppings:</Label>
-        <Button Name="cancelPPoacherButton" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Philly Poacher Order</Button>
-        <Button Name="confirmPPoacherButton" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Philly Poacher Order</Button>
+        
+        <Button Name="cancelPPoacherButton" Click="CancelOrder" Grid.Row="2" Grid.Column="0"  FontSize="16" FontFamily="Ariel, Calibri">Cancel Philly Poacher Order</Button>
+        <Button Name="confirmPPoacherButton" Click="FinishOrder" Grid.Row="2" Grid.Column="1"  FontSize="16" FontFamily="Ariel, Calibri">Finish Philly Poacher Order</Button>
 
 
         <StackPanel Grid.Row="1">
-            <CheckBox Checked="true" Margin="10, 10, 10, 5" Content="Sirloin"/>
-            <CheckBox Checked="true" Margin="10, 5" Content="Onion"/>
-            <CheckBox Checked="true" Margin="10, 5, 10, 10" Content="Roll"/>
+            <CheckBox IsChecked="true" Margin="10, 10, 10, 5" Content="Sirloin"/>
+            <CheckBox IsChecked="true" Margin="10, 5" Content="Onion"/>
+            <CheckBox IsChecked="true" Margin="10, 5, 10, 10" Content="Roll"/>
         </StackPanel>
     </Grid>
 </UserControl>
