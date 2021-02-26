@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -31,6 +32,7 @@ namespace BleakwindBuffet.PointOfSale.DrinkWindows
         void CancelOrder(Object sender, RoutedEventArgs e)
         {
             var buttonDisplay = new MenuButtons();
+            Debug.Assert(MainWindow != null);
             buttonDisplay.MainWindow = MainWindow;
             MainWindow.displayBorder.Child = buttonDisplay;
         }
